@@ -2,6 +2,9 @@
 
 > Felipe Rocha Oliveira
 
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/a0c77175c882429b80559f29f26388e5-with-play.gif)](https://www.loom.com/share/a0c77175c882429b80559f29f26388e5)
+
+
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" />
 
 <h3 align="center">
