@@ -17,6 +17,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "server": "cd backend && yarn && docker-compose up -d && yarn typeorm migration:run && yarn dev:server",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",

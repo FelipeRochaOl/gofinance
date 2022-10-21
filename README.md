@@ -1,6 +1,12 @@
 ## Desafio finalizado
 
 > Felipe Rocha Oliveira
+> Importante, para rodar a aplicação execute:
+
+```bash
+yarn server
+yarn start
+```
 
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/a0c77175c882429b80559f29f26388e5-with-play.gif)](https://www.loom.com/share/a0c77175c882429b80559f29f26388e5)
 
