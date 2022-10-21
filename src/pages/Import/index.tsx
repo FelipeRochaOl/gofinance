@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable no-unused-expressions */
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -35,7 +37,7 @@ const Import: React.FC = () => {
       await api.post('/transactions/import', data);
       history.push('/');
     } catch (err) {
-      console.log(err.response.error);
+      console.log(err);
     }
   }
 
