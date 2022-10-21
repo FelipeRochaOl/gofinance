@@ -39,10 +39,8 @@ const Dashboard: React.FC = () => {
     async function loadTransactions(): Promise<void> {
       const getData = await api.get('/transactions');
       if (getData) {
-        const {
-          transactions: transactionsData,
-          balance: balanceData,
-        } = await getData.data;
+        const { transactions: transactionsData, balance: balanceData } =
+          await getData.data;
         const transactionsFormat = transactionsData.map(
           (transaction: Transaction) => {
             const { type, value, created_at } = transaction;
