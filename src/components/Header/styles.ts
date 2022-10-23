@@ -31,6 +31,19 @@ export const Container = styled.div<ContainerProps>`
           opacity: 0.6;
         }
       }
+
+      button {
+        color: #fff;
+        background: transparent;
+        border: 0;
+        font-size: 16px;
+        transition: opacity 0.2s;
+        margin-left: 32px;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 `;
