@@ -37,6 +37,7 @@ const Import: React.FC = () => {
       await api.post('/transactions/import', data);
       history.push('/');
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.log(err);
     }
   }
