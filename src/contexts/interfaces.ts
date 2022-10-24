@@ -9,7 +9,7 @@ export interface TransactionModalContextType {
 export interface TransactionModel {
   transactions: Transaction[];
   createTransaction: (transaction: TransactionInput) => void;
-  fetchTransactions: () => void;
+  fetchTransactions: () => Promise<void>;
 }
 
 export interface TransactionContextType {

@@ -13,6 +13,7 @@ import { Container, Title, ImportFileContainer, Footer } from './styles';
 
 import alert from '../../assets/alert.svg';
 import api from '../../services/api';
+import { useTransactions } from '../../hooks/useTransactions';
 
 interface FileProps {
   file: File;
@@ -23,6 +24,7 @@ interface FileProps {
 const Import: React.FC = () => {
   const [uploadedFiles, setUploadedFiles] = useState<FileProps[]>([]);
   const history = useHistory();
+  const { fetchTransactions } = useTransactions();
 
   async function handleUpload(): Promise<void> {
     const data = new FormData();
@@ -35,6 +37,7 @@ const Import: React.FC = () => {
 
     try {
       await api.post('/transactions/import', data);
+      await fetchTransactions();
       history.push('/');
     } catch (err) {
       // eslint-disable-next-line no-console
