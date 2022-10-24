@@ -1,11 +1,16 @@
 ## Desafio finalizado
 
 > Felipe Rocha Oliveira
-> Importante, para rodar a aplicação execute:
+> Importante, para rodar a aplicação você precisa do docker e docker-compose instalado, execute:
 
 ```bash
-yarn server
-yarn start
+sudo sh ./tools/start.sh
+```
+
+> Importante, para parar a aplicação execute:
+
+```bash
+sudo sh ./tools/stop.sh
 ```
 
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/a0c77175c882429b80559f29f26388e5-with-play.gif)](https://www.loom.com/share/a0c77175c882429b80559f29f26388e5)
